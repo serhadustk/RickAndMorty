@@ -1,7 +1,7 @@
 import {combineReducers} from 'redux';
-import intakesReducers from './charactersReducers';
+import charactersReducers from './charactersReducers';
 const rootReducer = combineReducers({
-  intake: intakesReducers,
+  characters: charactersReducers,
   // Diğer reducer'ları buraya ekleyebilirsiniz.
 });
 

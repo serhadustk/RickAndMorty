@@ -11,7 +11,7 @@ export const getCharacters = () => {
     try {
       dispatch({type: CHARACTERS_PENDING});
       const response = await getRequest(CHARACTER_LIST_URL);
-      const {data} = response.results;
+      const data = response.data.results;
       dispatch({
         type: FETCH_CHARACTERS,
         payload: data,
